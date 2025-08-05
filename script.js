@@ -73,7 +73,7 @@ const committeeMembers = [
 { name: 'Mr. Pallati Narsimhulu', role: 'Faculty Coordinator & Co - Convenor', email: 'pallatinarsimhulu@sithyd.siu.edu.in', linkedin: '#', photo: 'Photo/pallati.jpg', details: 'Plays a pivotal role in aligning academic curriculum with placement training modules.' },
 { name: 'Mr. Kondapalkula Sricharan Rao', role: 'Training and Placement Cell Student President', email: '24070722013@sithyd.siu.edu.in',linkedin: 'https://www.linkedin.com/in/sricharan-rao-421152323', photo: 'Photo/Sricharan.jpg', details: 'Leads the student body of the T&P Cell with dedication.' },
 { name: 'Ms. Mokshita VP', role: 'Training and Placement Cell Student Vice President', email: 'mokshitavp@gmail.com', linkedin: 'https://www.linkedin.com/in/mokshita-v-p-479296347', photo: 'Photo/Mokshitha.jpg', details: 'Assists in the leadership of student placement initiatives.' },
-{ name: 'Mr. Sreesainadh Ancha', role: 'Training and Placement Cell Head Training & Internships', email: 'srichakrasainadh@gmail.com', linkedin: 'https://www.linkedin.com/in/ancha-sreesainadh-b42389346', photo: 'Photo/sainadh.jpg', details: 'Focuses on organizing training programs and securing valuable internship opportunities.' },
+{ name: 'Mr. Sreesainadh Ancha', role: 'Training and Placement Cell Head Training & Internships', email: 'srichakrasainadh@gmail.com', linkedin: 'https://www.linkedin.com/in/ancha-sreesainadh-b42389346', photo: 'Photo/Sainadh.jpg', details: 'Focuses on organizing training programs and securing valuable internship opportunities.' },
 { name: 'Ms. Harini Kummari', role: 'Training and Placement Cell Student Coordinator', email: 'harinikummari9@gmail.com', linkedin: 'https://www.linkedin.com/in/harini-k-4b8558347', photo: 'Photo/Harini.jpg', details: 'A key student coordinator, helping to manage events and communication.' }
 ];
 
@@ -644,3 +644,4 @@ renderHomepageEvents();
 renderTeams();
 
 });
+
