@@ -21,13 +21,13 @@ const eventsData = [
     startDate: '2025-08-08',
     endDate: '2025-08-09',
     registration: {
-        status: 'open',
+        status: '',
         link: 'https://example.com/springboot-registration'
     },
     heroImage: 'https://placehold.co/1200x400/003566/ffffff?text=SpringBoot+Workshop',
     overview: "A two-day hands-on workshop covering SpringBoot API development and comprehensive backend techniques. Learn from experienced engineers from Broadridge and Infosys to build robust backend systems with SpringBoot.",
     displaySections: {
-        registration: true,
+        registration: false,
         agenda: true,
         speakers: true,
         gallery: true,
@@ -44,8 +44,11 @@ const eventsData = [
         { name: 'Mr. Uthej Kalathilal', role: 'Digital Specialist Engineer, Infosys', photo: 'https://placehold.co/200x200/00a8e8/fff?text=UK' },
     ],
     gallery: [
-        'https://placehold.co/600x400/ffd60a/333?text=SpringBoot+Workshop+Day+1',
-        'https://placehold.co/600x400/00a8e8/fff?text=SpringBoot+Workshop+Day+2'
+        'Photo/java1.jpeg',
+        'Photo/java2.jpeg',
+        'Photo/java3.jpeg',
+        'Photo/java4.jpeg',
+        'Photo/java5.jpeg',
     ],
     videos: [],
     testimonials: [],
@@ -644,4 +647,5 @@ renderHomepageEvents();
 renderTeams();
 
 });
+
 
