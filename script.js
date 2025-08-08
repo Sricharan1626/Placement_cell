@@ -21,7 +21,7 @@ const eventsData = [
     startDate: '2025-08-08',
     endDate: '2025-08-09',
     registration: {
-        status: '',
+        status: 'open',
         link: 'https://example.com/springboot-registration'
     },
     heroImage: 'https://placehold.co/1200x400/003566/ffffff?text=SpringBoot+Workshop',
@@ -647,5 +647,6 @@ renderHomepageEvents();
 renderTeams();
 
 });
+
 
 
