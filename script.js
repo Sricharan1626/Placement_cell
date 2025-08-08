@@ -24,7 +24,7 @@ const eventsData = [
         status: 'open',
         link: 'https://example.com/springboot-registration'
     },
-    heroImage: 'https://placehold.co/1200x400/003566/ffffff?text=SpringBoot+Workshop',
+    heroImage: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Felearn.nptel.ac.in%2Fshop%2Fcompleted-courses%2Fpartnering-closed%2Fspringboot-openapi-integrating-spring-boot-with-openapi-a-comprehensive-guide%2F&psig=AOvVaw1Q7OVgq2_axqbmagjfdalP&ust=1754760524790000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCLjGs8He-44DFQAAAAAdAAAAABAE',
     overview: "A two-day hands-on workshop covering SpringBoot API development and comprehensive backend techniques. Learn from experienced engineers from Broadridge and Infosys to build robust backend systems with SpringBoot.",
     displaySections: {
         registration: false,
@@ -647,6 +647,7 @@ renderHomepageEvents();
 renderTeams();
 
 });
+
 
 
 
