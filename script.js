@@ -81,7 +81,7 @@ const committeeMembers = [
 
 const industryAdvisors = [
 { name: 'Ms. UmaRani Tejomurtula', role: 'Developer Productivity Specialist, Microsoft', email: 'umarani.tejomurtula@microsoft.com', linkedin: '#', photo: 'Photo/Uma.jpg', details: 'An industry expert from Microsoft providing invaluable insights and guidance.' },
-{ name: 'Ms. Niharika Vanka', role: 'Senior Data Analyst, Inn Collection Group, UK', email: 'vankaniharika08@gmail.com', linkedin: '#', photo: 'https://placehold.co/200x200/cce5ff/0077b5?text=NV', details: 'An accomplished alumna offering a global perspective on data analytics careers.' }
+{ name: 'Ms. Niharika Vanka', role: 'Senior Data Analyst, Inn Collection Group, UK', email: 'vankaniharika08@gmail.com', linkedin: '#', photo: 'Photo/niharika.jpg', details: 'An accomplished alumna offering a global perspective on data analytics careers.' }
 ];
 
     // --- Dark Mode Logic ---
@@ -642,3 +642,4 @@ const industryAdvisors = [
     renderTeams();
 
 });
+
