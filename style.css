@@ -50,7 +50,7 @@
             /* --- EDIT THIS --- Replace the URL with your desired header image */
             background-image: 
                 linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url("Photo/campus.jpg");
+                url("Photo/campus.png");
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -1110,3 +1110,4 @@
                 padding: 5px;
             }
         }
+
