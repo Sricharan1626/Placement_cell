@@ -46,21 +46,15 @@
         .hero-header {
             height: 50vh;
             min-height: 400px;
-            background-color: #0d293e; /* Dark blue fallback color */
-            /* --- YOUR IMAGE IS HERE --- 
-               The background-image now uses the URL you provided.
-            */
+            background-color: #005f73;
+            /* --- EDIT THIS --- Replace the URL with your desired header image */
             background-image: 
-                linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                 url("Photo/campus2.png");
-            /* --- CSS FIX ---
-               - background-size: contain; ensures the whole image is visible.
-               - background-attachment: scroll; is more reliable than 'fixed'.
-            */
+            background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover; 
-            background-attachment: scroll;
+            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1117,6 +1111,7 @@
                 padding: 5px;
             }
         }
+
 
 
 
