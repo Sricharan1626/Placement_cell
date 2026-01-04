@@ -1,19 +1,11 @@
 
+        
 document.addEventListener('DOMContentLoaded', function() {
 
     // =================================================================
-    // =================================================================
-    //
-    //              YOUR EVENT DATABASE & CONTROL PANEL
-    //
-    //  - To add a new event, copy an existing event object {} and paste it.
-    //  - Change the details like 'id', 'title', 'startDate', etc.
-    //  - To hide a section on an event's page (like speakers or gallery),
-    //    find its 'displaySections' object and set the section to `false`.
-    //
+    //              EVENT DATABASE
     // =================================================================
 const eventsData = [
-    // =================================================================
 {
 id: 'springboot-api-backend',
 title: 'SpringBoot API & Backend Development Workshop',
@@ -57,14 +49,283 @@ highlights: [
 { stat: '50', label: 'Seats' }
 ]
 },
-
-
-
-
 ];
+
 // =================================================================
-// END OF EVENT DATABASE
+//              INTERNSHIP DATABASE
 // =================================================================
+const internshipData = {
+    summer: [
+        {
+            company: 'Google STEP',
+            role: 'Software Engineering',
+            dates: 'Oct–Nov 2025',
+            duration: '8–10 weeks',
+            stipend: 'Competitive',
+            eligibility: 'CS/IT UG students',
+            link: 'https://thenewviews.com/google-step-internship/',
+            icon: 'fab fa-google',
+            status: 'closed'
+        },
+        {
+            company: 'Microsoft India',
+            role: 'Tech/PM/Design',
+            dates: 'Dec 2025 – Jan 2026',
+            duration: '8–12 weeks',
+            stipend: 'Competitive',
+            eligibility: 'Penultimate year students',
+            link: 'https://tnpofficer.com/internship/',
+            icon: 'fab fa-microsoft',
+            status: 'active'
+        },
+        {
+            company: 'Amazon WOW',
+            role: 'Software Development',
+            dates: 'Oct 2025',
+            duration: '6 months or summer',
+            stipend: 'Competitive',
+            eligibility: 'Women in tech',
+            link: 'https://jobsnet.in/2026-batch/',
+            icon: 'fab fa-amazon',
+            status: 'closed'
+        },
+        {
+            company: 'Goldman Sachs',
+            role: 'Engineering Summer Analyst',
+            dates: 'Sept–Nov 2025',
+            duration: '9–10 weeks',
+            stipend: 'Competitive',
+            eligibility: 'Final-year engineering students',
+            link: 'https://www.talentd.in/articles/goldman-sachs-summer-internship-program-2026-india-engineering-division',
+            icon: 'fas fa-building-columns',
+            status: 'closed'
+        },
+        {
+            company: 'Cisco',
+            role: 'Network & Software Intern',
+            dates: 'Aug 2025',
+            duration: '6 months',
+            stipend: '₹35,000/month + perks',
+            eligibility: '≥70% marks, CSE/IT/ECE',
+            link: 'https://techinternshipnews.com/cisco-internship-eligibility-stipend-online-application-process/',
+            icon: 'fas fa-network-wired',
+            status: 'closed'
+        },
+        {
+            company: 'PayPal',
+            role: 'Software Engineer Intern',
+            dates: 'Dec 2025 – Feb 2026',
+            duration: 'Summer 2026',
+            stipend: 'Paid',
+            eligibility: 'CS students graduating 2027',
+            link: 'https://www.foundit.in/career-advice/paypal-summer-internship-apply/',
+            icon: 'fab fa-paypal',
+            status: 'active'
+        },
+        {
+            company: 'Visa',
+            role: 'Payments & Tech Internship',
+            dates: 'Sept 2025 onwards',
+            duration: '12 weeks',
+            stipend: 'Paid',
+            eligibility: 'UG/PG students',
+            link: 'https://thenewviews.com/visa-summer-internship/',
+            icon: 'fab fa-cc-visa',
+            status: 'active'
+        },
+        {
+            company: 'Barclays',
+            role: 'Finance & Tech Roles',
+            dates: 'Jan–Feb 2026',
+            duration: '8–12 weeks',
+            stipend: '₹39,000–₹70,000/month',
+            eligibility: 'Finance/Tech grads',
+            link: 'https://www.coursejoiner.com/internship/free-summer-interns-2026-70k/',
+            icon: 'fas fa-piggy-bank',
+            status: 'soon'
+        },
+        {
+            company: 'TCS',
+            role: 'Research Internship',
+            dates: 'Rolling',
+            duration: '6–18 weeks',
+            stipend: 'Varies',
+            eligibility: 'Final-year BE/BTech, MTech, PhD',
+            link: 'https://www.tcs.com/careers/india/internship',
+            icon: 'fas fa-laptop-code',
+            status: 'active'
+        },
+        {
+            company: 'Infosys InStep',
+            role: 'Global Internship',
+            dates: 'Rolling',
+            duration: '8 weeks',
+            stipend: 'Paid',
+            eligibility: 'Engineering/Management students',
+            link: 'https://www.infosys.com/careers/internships.html',
+            icon: 'fas fa-globe',
+            status: 'active'
+        },
+         {
+            company: 'ISRO',
+            role: 'Research/Space Science',
+            dates: 'March 2026',
+            duration: '6 weeks',
+            stipend: 'Unpaid',
+            eligibility: 'UG/PG in Science/Tech',
+            link: 'https://www.isro.gov.in/InternshipAndProjects.html',
+            icon: 'fas fa-rocket',
+            status: 'soon'
+        },
+        {
+            company: 'DRDO',
+            role: 'Research & Development',
+            dates: 'Feb–March 2026',
+            duration: '6 weeks',
+            stipend: 'Unpaid',
+            eligibility: 'Engineering students',
+            link: 'https://www.drdo.gov.in',
+            icon: 'fas fa-shield-halved',
+            status: 'soon'
+        },
+         {
+            company: 'Deloitte India',
+            role: 'Consulting, Audit',
+            dates: 'Jan–March 2026',
+            duration: '6–8 weeks',
+            stipend: 'Paid',
+            eligibility: 'Management/Engineering',
+            link: 'https://thenewviews.com/summer-internship/',
+            icon: 'fas fa-briefcase',
+            status: 'active'
+        },
+        {
+            company: 'BCG',
+            role: 'Consulting Intern',
+            dates: 'Campus cycles',
+            duration: '8–10 weeks',
+            stipend: 'Competitive',
+            eligibility: 'UG/PG/MBA',
+            link: 'https://careers.bcg.com/global/en/internship-opportunities',
+            icon: 'fas fa-user-tie',
+            status: 'active'
+        },
+         {
+            company: 'EY',
+            role: 'Advisory/Assurance Intern',
+            dates: 'Campus cycles',
+            duration: '8 weeks',
+            stipend: 'Paid',
+            eligibility: 'Commerce/Finance/Tech',
+            link: 'https://www.ey.com/en_in/careers/student-entry-level-programs',
+            icon: 'fas fa-magnifying-glass-chart',
+            status: 'active'
+        },
+        {
+            company: 'PwC',
+            role: 'Tech Consulting Intern',
+            dates: 'Campus cycles',
+            duration: '8–10 weeks',
+            stipend: 'Paid',
+            eligibility: 'Engineering/Management',
+            link: 'https://in.linkedin.com/jobs/view/acceleration-center-advisory-b-tech-intern-2026-at-pwc-acceleration-center-india-4315953178',
+            icon: 'fas fa-chart-pie',
+            status: 'active'
+        }
+    ],
+    winter: [
+        {
+            company: 'Google',
+            role: 'Application Engineering Intern',
+            dates: 'Sept 17, 2025',
+            duration: '22–24 weeks',
+            stipend: 'Competitive',
+            eligibility: 'CS/IT students',
+            link: 'https://www.foundit.in/career-advice/google-winter-internship-application-engineering-apply/',
+            icon: 'fab fa-google',
+            status: 'closed'
+        },
+        {
+            company: 'Infosys Winternship',
+            role: 'Engineering Projects',
+            dates: 'Campus nomination',
+            duration: '76 days',
+            stipend: 'Paid',
+            eligibility: 'CS/IT students',
+            link: 'https://www.infosys.com/careers/internships.html',
+            icon: 'fas fa-laptop',
+            status: 'active'
+        },
+        {
+            company: 'ISRO / IIRS',
+            role: 'Remote Sensing Internship',
+            dates: 'Aug–Oct 2025',
+            duration: '45 days minimum',
+            stipend: 'Unpaid',
+            eligibility: 'UG/PG in Science/Tech',
+            link: 'https://www.iirs.gov.in/content/external-student-internship',
+            icon: 'fas fa-satellite',
+            status: 'closed'
+        },
+        {
+            company: 'PM Internship Scheme',
+            role: 'Govt-backed internship',
+            dates: 'Sept 2025 onwards',
+            duration: 'Varies',
+            stipend: '₹5,000/month + allowance',
+            eligibility: 'Age 21–24 years',
+            link: 'https://aicteinternshipupdates.com/pm-internship-scheme-2026-apply-online/',
+            icon: 'fas fa-landmark',
+            status: 'active'
+        }
+    ],
+    virtual: [
+        {
+            company: 'JP Morgan',
+            role: 'Forage Virtual job simulation',
+            dates: 'Always Open',
+            duration: 'Virtual / Self-paced',
+            stipend: 'Certificate',
+            eligibility: 'B.Tech/ BBA Pursuing',
+            link: 'https://www.theforage.com/simulations?companies=jpmorgan&fbclid=PAVERFWAO7nTFleHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAafjtINODhkpUfODsh6gKLmZ8wKGXo0hm1qjEaMxidHhNUynTDMu_-YXWpMvrg_aem_Tnt9szuJaSJ91Gd3tQy1zA',
+            icon: 'fas fa-building-columns',
+            status: 'active'
+        },
+        {
+            company: 'JP Morgan',
+            role: 'Software Engineering (Forage)',
+            dates: 'Always Open',
+            duration: 'Virtual / Self-paced',
+            stipend: 'Certificate',
+            eligibility: 'Anyone',
+            link: 'https://www.theforage.com/simulations/jpmorgan/advanced-software-engineering-r0fm',
+            icon: 'fas fa-code',
+            status: 'active'
+        },
+        {
+            company: 'Cisco',
+            role: 'Data Science',
+            dates: 'Always Open',
+            duration: 'Virtual',
+            stipend: 'Skill Building',
+            eligibility: 'Anyone',
+            link: 'https://www.netacad.com/courses/introduction-data-science?courseLang=en-US',
+            icon: 'fas fa-database',
+            status: 'active'
+        },
+        {
+            company: 'Google',
+            role: 'Various Fields',
+            dates: 'Rolling',
+            duration: 'Varies',
+            stipend: 'Varies',
+            eligibility: 'Students throughout India',
+            link: 'https://www.google.com/about/careers/applications/jobs/results/140779051512931014-associate-software-developer-intern/',
+            icon: 'fab fa-google',
+            status: 'active'
+        }
+    ]
+};
 
 // =================================================================
 //              MEET THE TEAM DATABASE
@@ -407,6 +668,109 @@ const industryAdvisors = [
     backToHomeBtn.addEventListener('click', hideEventPage);
     backToHomeBtnHeader.addEventListener('click', hideEventPage);
 
+    // --- INTERNSHIP PAGE LOGIC ---
+    const internshipPage = document.getElementById('internshipPage');
+    const internshipNav = document.getElementById('internshipNav');
+    const openInternshipPageBtn = document.getElementById('openInternshipPageBtn');
+    const internshipBackBtn = document.getElementById('internshipBackBtn');
+    const internshipBackBtnBottom = document.getElementById('internshipBackBtnBottom');
+    const internshipGrid = document.getElementById('internship-grid-container');
+    const internshipTabs = document.querySelectorAll('.internship-tab-btn');
+
+    function createInternshipCard(intern) {
+        let statusClass = 'status-active';
+        let statusText = 'Active';
+
+        if (intern.status === 'closed') {
+            statusClass = 'status-closed';
+            statusText = 'Closed';
+        } else if (intern.status === 'soon') {
+            statusClass = 'status-soon';
+            statusText = 'Opens Soon';
+        }
+
+        return `
+            <div class="intern-card">
+                <div class="intern-card-header">
+                    <div class="company-icon"><i class="${intern.icon} fa-fw"></i></div>
+                    <div>
+                        <div class="intern-role">${intern.role}</div>
+                        <div class="intern-company">${intern.company}</div>
+                    </div>
+                </div>
+                <div class="intern-card-body">
+                    <div class="intern-detail-row">
+                        <i class="far fa-calendar-alt"></i>
+                        <div class="intern-detail-content">
+                            <strong>Applications:</strong><br> ${intern.dates}
+                        </div>
+                    </div>
+                    <div class="intern-detail-row">
+                        <i class="far fa-clock"></i>
+                        <div class="intern-detail-content">
+                            <strong>Duration:</strong><br> ${intern.duration}
+                        </div>
+                    </div>
+                    <div class="intern-detail-row">
+                         <i class="fas fa-money-bill-wave"></i>
+                        <div class="intern-detail-content">
+                            <strong>Stipend:</strong><br> ${intern.stipend}
+                        </div>
+                    </div>
+                     <div class="intern-detail-row">
+                         <i class="fas fa-user-graduate"></i>
+                        <div class="intern-detail-content">
+                            <strong>Eligibility:</strong><br> ${intern.eligibility}
+                        </div>
+                    </div>
+                </div>
+                <div class="intern-card-footer">
+                    <span class="status-badge ${statusClass}">${statusText}</span>
+                    <a href="${intern.link}" target="_blank" rel="noopener noreferrer" class="internship-action-btn" style="padding: 8px 20px; font-size: 0.9rem;">Apply</a>
+                </div>
+            </div>
+        `;
+    }
+
+    function renderInternships(category) {
+        const data = internshipData[category];
+        internshipGrid.innerHTML = data.map(createInternshipCard).join('');
+        
+        // Trigger animations
+        internshipGrid.classList.remove('is-visible');
+         setTimeout(() => {
+            internshipGrid.classList.add('is-visible');
+        }, 100);
+    }
+
+    function showInternshipPage() {
+        mainContent.classList.add('content-hidden');
+        internshipNav.style.display = 'flex';
+        internshipPage.classList.remove('content-hidden');
+        window.scrollTo({ top: 0, behavior: 'instant' });
+        renderInternships('summer'); // Default
+    }
+
+    function hideInternshipPage() {
+        internshipPage.classList.add('content-hidden');
+        internshipNav.style.display = 'none';
+        mainContent.classList.remove('content-hidden');
+        document.getElementById('internships')?.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    if(openInternshipPageBtn) openInternshipPageBtn.addEventListener('click', showInternshipPage);
+    if(internshipBackBtn) internshipBackBtn.addEventListener('click', hideInternshipPage);
+    if(internshipBackBtnBottom) internshipBackBtnBottom.addEventListener('click', hideInternshipPage);
+
+    internshipTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            internshipTabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            renderInternships(tab.dataset.category);
+        });
+    });
+
+
     // --- Lightbox Logic ---
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = lightbox.querySelector('img');
@@ -644,3 +1008,5 @@ const industryAdvisors = [
 });
 
 
+
+  
