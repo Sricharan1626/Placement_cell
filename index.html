@@ -3413,12 +3413,12 @@ async function fetchLeaderboardData() {
                 };
 
                 return {
-                    name: getVal(['name', 'student name', 'student_name']),
-                    prn: getVal(['prn', 'id', 'registration number', 'reg_no']),
-                    branch: getVal(['branch', 'department', 'dept']),
+                    name: String(getVal(['name', 'student name', 'student_name']) || ''),
+                    prn: String(getVal(['prn', 'id', 'registration number', 'reg_no']) || ''),
+                    branch: String(getVal(['branch', 'department', 'dept']) || ''),
                     year: normalizeYear(getVal(['year', 'current year', 'batch', 'year_of_study'])),
                     points: parseInt(getVal(['points', 'score', 'total points', 'total_points'])) || 0,
-                    email: getVal(['email', 'mail', 'email_id'])
+                    email: String(getVal(['email', 'mail', 'email_id']) || '')
                 };
             });
 
@@ -3573,9 +3573,12 @@ function filterFullLeaderboard(resetPage = true) {
     const branchFilter = document.getElementById('fullBranchFilter').value;
 
     let filtered = allStudentsData.filter(s => {
-        const matchesSearch = s.name.toLowerCase().includes(searchText) || s.prn.includes(searchText);
+        const nameMatch = (s.name || '').toLowerCase().includes(searchText);
+        const prnMatch = String(s.prn || '').toLowerCase().includes(searchText);
+        const matchesSearch = nameMatch || prnMatch;
         const matchesYear = yearFilter === 'all' || s.year === yearFilter;
         const matchesBranch = branchFilter === 'all' || s.branch === branchFilter;
+
         return matchesSearch && matchesYear && matchesBranch;
     });
 
