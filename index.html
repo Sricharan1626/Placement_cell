@@ -3035,7 +3035,7 @@
             <section id="eventCTA" class="page-section animated-item">
                 <canvas class="particle-background" data-particle-color="dark"></canvas>
                 <div class="section-header">
-                    <h2>Interested in Participating Next Year?</h2>
+                    <h2>Interested in Participating Next Event?</h2>
                     <p>Whether you're a student, a company, or a potential speaker, we'd love to hear from you.</p>
                     <a href="#contact" id="event-cta-button" class="brochure-btn" style="margin-top: 1rem;">Get in Touch</a>
                 </div>
@@ -3102,60 +3102,109 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const eventsData = [
         {
-            id: 'resume-workshop-2024',
-            title: "Resume Building & Interview Prep Workshop",
-            startDate: "2024-09-15",
-            endDate: "2024-09-15",
-            overview: "A comprehensive session led by HR experts from top MNCs, focusing on crafting ATS-friendly resumes and mastering behavioral interview techniques.",
-            heroImage: "Photo/campus.png",
-            registration: { status: 'closed', link: '#' },
-            agenda: [
-                { time: "10:00 AM", title: "Introduction to Resume ATS Systems", speaker: "Mr. John Doe" },
-                { time: "11:30 AM", title: "Live Resume Reviews", speaker: "HR Panel" },
-                { time: "02:00 PM", title: "Mock Interview Drills", speaker: "Alumni Mentors" }
-            ],
-            speakers: [
-                { name: "Jane Smith", role: "Senior HR, Google", photo: "https://ui-avatars.com/api/?name=Jane+Smith&background=random" },
-                { name: "Robert Brown", role: "Talent Acquisition, Microsoft", photo: "https://ui-avatars.com/api/?name=Robert+Brown&background=random" }
-            ],
-            gallery: [
-                "https://placehold.co/600x400/e0e0e0/808080?text=Workshop+1",
-                "https://placehold.co/600x400/e0e0e0/808080?text=Workshop+2",
-                "https://placehold.co/600x400/e0e0e0/808080?text=Workshop+3"
-            ],
-            videos: [],
-            testimonials: [
-                { quote: "The resume tips were a game changer for me!", author: "Student A", role: "CSE 3rd Year" }
-            ],
-            highlights: [
-                { stat: "200+", label: "Attendees" },
-                { stat: "50+", label: "Resumes Reviewed" }
-            ]
-        },
+id: 'springboot-api-backend',
+title: 'SpringBoot API & Backend Development Workshop',
+startDate: '2025-08-08',
+endDate: '2025-08-09',
+registration: {
+status: 'open',
+link: 'https://example.com/springboot-registration'
+},
+heroImage: 'Photo/workshop.jpg',
+overview: "A two-day hands-on workshop covering SpringBoot API development and comprehensive backend techniques. Learn from experienced engineers from Broadridge and Infosys to build robust backend systems with SpringBoot.",
+displaySections: {
+registration: false,
+agenda: true,
+speakers: true,
+gallery: true,
+videos: false,
+testimonials: false,
+highlights: true,
+},
+agenda: [
+{ time: '10:00 AM', title: 'Workshop on SpringBoot API Development by Mr. M Sai Kumar' },
+{ time: '02:00 PM', title: 'Workshop on Backend Development using SpringBoot by Mr. Uthej Kalathilal' },
+],
+speakers: [
+{ name: 'Mr. M Sai Kumar', role: 'Software Engineer, Broadridge', photo: 'https://placehold.co/200x200/ffc300/333?text=MSK' },
+{ name: 'Mr. Uthej Kalathilal', role: 'Digital Specialist Engineer, Infosys', photo: 'https://placehold.co/200x200/00a8e8/fff?text=UK' },
+],
+gallery: [
+'Photo/java1.jpeg',
+'Photo/java2.jpeg',
+'Photo/java3.jpeg',
+'Photo/java4.jpeg',
+'Photo/java5.jpeg',
+],
+videos: [],
+testimonials: [],
+highlights: [
+{ stat: '2', label: 'Expert Speakers' },
+{ stat: '2', label: 'Workshop Days' },
+{ stat: '50', label: 'Seats' }
+]
+},
+        
         {
-            id: 'hackathon-2025',
-            title: "SIT Hackathon 2025",
-            startDate: "2025-02-10",
-            endDate: "2025-02-12",
-            overview: "An intense 48-hour coding marathon where students solve real-world problems using AI, Blockchain, and IoT.",
-            heroImage: "Photo/campus2.png",
-            registration: { status: 'open', link: '#' },
-            agenda: [
-                { time: "Day 1 - 09:00 AM", title: "Opening Ceremony", speaker: "Director" },
-                { time: "Day 1 - 11:00 AM", title: "Hacking Begins", speaker: "" },
-                { time: "Day 3 - 05:00 PM", title: "Prize Distribution", speaker: "Chief Guest" }
-            ],
-            speakers: [
-                { name: "Dr. A. Scientist", role: "AI Researcher", photo: "https://ui-avatars.com/api/?name=A+Scientist&background=random" }
-            ],
-            gallery: [],
-            videos: [],
-            testimonials: [],
-            highlights: [
-                { stat: "₹1L", label: "Prize Pool" },
-                { stat: "50", label: "Teams" }
-            ]
+    id: 'industry-readiness-linkedin-ai-2026',
+    title: "Industry Readiness in the Age of LinkedIn & AI",
+    startDate: "2026-01-16",
+    endDate: "2026-01-16",
+    overview: "An industry-focused session designed to empower students with real-world career strategies in the AI-driven job market. The session emphasizes building a strong LinkedIn presence, leveraging AI tools for career growth, and understanding current industry expectations and skill trends.",
+    heroImage: "Photo/campus.png",
+    displaySections: {
+registration: true,
+agenda: true,
+speakers: true,
+gallery: true,
+videos: false,
+testimonials: false,
+highlights: false,
+},
+    registration: { status: 'closed', link: '#' },
+    agenda: [
+        { 
+            time: "02:00 PM", 
+            title: "Industry Readiness in the Age of LinkedIn & AI", 
+            speaker: "Mr. Nilesh Kataria" 
+        },
+        { 
+            time: "02:45 PM", 
+            title: "Leveraging LinkedIn & AI Tools for Career Growth", 
+            speaker: "Mr. Nilesh Kataria" 
+        },
+        { 
+            time: "03:30 PM", 
+            title: "Industry Expectations & Campus-to-Corporate Transition", 
+            speaker: "Mr. Nilesh Kataria" 
         }
+    ],
+    speakers: [
+        { 
+            name: "Nilesh Kataria", 
+            role: "Co-Founder, RiseUp Career Studio", 
+            photo: "https://ui-avatars.com/api/?name=Nilesh+Kataria&background=random" 
+        }
+    ],
+    gallery: [
+        "Photo/Linkdin2026.jpeg"
+        
+    ],
+    videos: [],
+    testimonials: [
+        
+    ],
+    highlights: [
+    ],
+    venue: "Microsoft AI Innovators Hub, SIT Hyderabad",
+    organizers: [
+        "IEEE SIT Hyderabad Student Branch",
+        "Microsoft AI Innovators Hub",
+        "Training & Placement Cell, SIT Hyderabad"
+    ],
+      
+}
+
     ];
 
     const internshipData = {
